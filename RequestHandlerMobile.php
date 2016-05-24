@@ -2,6 +2,7 @@
 
 require_once ("./VehicleAccess.php");
 require_once ("./FillUpAccess.php");
+require_once ("./UserValidator.php");
 
 $method = $_GET['method'];
 
@@ -25,5 +26,14 @@ if($method == "add_fill_up"){
 
 	$fu = new FillUpAccess();
 	echo $fu->insertRow($data);
+}
+
+if($method == "login"){
+	$data = array();
+	$data['username']=$_POST["user_name"];
+	$data['password']=$_POST["password"];
+
+	$user_check = new UserValidator();
+	echo $user_check->checkUser($data);
 }
 

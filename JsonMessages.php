@@ -20,3 +20,8 @@ define('CONNECTION_ERROR','{
                 "error_code" : "4",
                 "message" : "database connection unsuccessful"
             }');
+
+define('INVALID_USER','{
+                "error_code" : "5",
+                "message" : "Invalid user name or password."
+            }');

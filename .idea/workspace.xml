@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd132b0b-4ede-4e80-9acf-0ae8a53236c2" name="Default" comment="" />
+    <list default="true" id="bd132b0b-4ede-4e80-9acf-0ae8a53236c2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UserValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsonMessages.php" afterPath="$PROJECT_DIR$/JsonMessages.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RequestHandlerMobile.php" afterPath="$PROJECT_DIR$/RequestHandlerMobile.php" />
+    </list>
     <ignored path="FTApplicationServer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -22,31 +28,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VehicleAccess.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VehicleAccess.php">
+      <file leaf-file-name="RequestHandlerMobile.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RequestHandlerMobile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="29.172413">
-              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.5681818">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserValidator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserValidator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.551724">
+              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding>
                 <element signature="e#7#93#0#PHP" expanded="true" />
-                <marker date="1462384910731" expanded="true" signature="585:790" placeholder="INSERT INTO vehicle... " />
-                <marker date="1462384910731" expanded="true" signature="1118:1313" placeholder="UPDATE vehic... " />
-                <marker date="1462384910731" expanded="true" signature="1118:1324" placeholder="UPDATE vehic... " />
-                <marker date="1462384910731" expanded="true" signature="1118:1342" placeholder="UPDATE vehic... " />
-                <marker date="1462384910731" expanded="true" signature="1124:1313" placeholder="INSERT INTO vehicle... " />
-                <marker date="1462384910731" expanded="true" signature="1669:1717" placeholder="DELETE FROM " />
-                <marker date="1462384910731" expanded="true" signature="1688:1717" placeholder="UPDATE vehic... " />
-                <marker date="1462384910731" expanded="true" signature="2124:2145" placeholder="SELECT * FRO... vehicle" />
+                <marker date="1464087240112" expanded="true" signature="566:573" placeholder="SELECT * FRO... user" />
+                <marker date="1464087240112" expanded="true" signature="566:787" placeholder="SELECT c.*,d... driver" />
+                <marker date="1464087240112" expanded="true" signature="636:771" placeholder="SELECT a.* F... member" />
+                <marker date="1464087240112" expanded="true" signature="675:753" placeholder="SELECT * FRO... user" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestHandler.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RequestHandler.php">
+      <file leaf-file-name="JsonMessages.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JsonMessages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.036101084">
-              <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+            <state vertical-scroll-proportion="-11.724138">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,8 +67,8 @@
       <file leaf-file-name="DriverAccess.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DriverAccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+            <state vertical-scroll-proportion="-14.310345">
+              <caret line="43" column="9" selection-start-line="41" selection-start-column="8" selection-end-line="43" selection-end-column="9" />
               <folding>
                 <element signature="e#7#93#0#PHP" expanded="true" />
                 <marker date="1462385563884" expanded="true" signature="614:828" placeholder="INSERT INTO member... " />
@@ -67,20 +79,67 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Access.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Access.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.655172">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db_config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db_config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBConnection.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DBConnection.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FillUpAccess.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FillUpAccess.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.275862">
+              <caret line="22" column="113" selection-start-line="22" selection-start-column="113" selection-end-line="22" selection-end-column="113" />
+              <folding>
+                <marker date="1462377252382" expanded="true" signature="495:804" placeholder="INSERT INTO fill_up... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/zz.php" />
         <option value="$PROJECT_DIR$/JosnMessages.php" />
-        <option value="$PROJECT_DIR$/JsonMessages.php" />
         <option value="$PROJECT_DIR$/FillUpAccess.php" />
-        <option value="$PROJECT_DIR$/RequestHandlerMobile.php" />
         <option value="$PROJECT_DIR$/Access.php" />
         <option value="$PROJECT_DIR$/VehicleAccess.php" />
         <option value="$PROJECT_DIR$/DriverAccess.php" />
         <option value="$PROJECT_DIR$/RequestHandler.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/JsonMessages.php" />
+        <option value="$PROJECT_DIR$/UserValidator.php" />
+        <option value="$PROJECT_DIR$/RequestHandlerMobile.php" />
       </list>
     </option>
   </component>
@@ -124,7 +183,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -146,6 +204,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,9 +257,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17397882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18078668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -235,6 +294,123 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/VehicleAccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="e#7#93#0#PHP" expanded="true" />
+            <marker date="1462384910731" expanded="true" signature="585:790" placeholder="INSERT INTO vehicle... " />
+            <marker date="1462384910731" expanded="true" signature="1118:1313" placeholder="UPDATE vehic... " />
+            <marker date="1462384910731" expanded="true" signature="1118:1324" placeholder="UPDATE vehic... " />
+            <marker date="1462384910731" expanded="true" signature="1118:1342" placeholder="UPDATE vehic... " />
+            <marker date="1462384910731" expanded="true" signature="1124:1313" placeholder="INSERT INTO vehicle... " />
+            <marker date="1462384910731" expanded="true" signature="1669:1717" placeholder="DELETE FROM " />
+            <marker date="1462384910731" expanded="true" signature="1688:1717" placeholder="UPDATE vehic... " />
+            <marker date="1462384910731" expanded="true" signature="2124:2145" placeholder="SELECT * FRO... vehicle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RequestHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DriverAccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#93#0#PHP" expanded="true" />
+            <marker date="1462385563884" expanded="true" signature="614:828" placeholder="INSERT INTO member... " />
+            <marker date="1462385563884" expanded="true" signature="929:1052" placeholder="INSERT INTO driver... " />
+            <marker date="1462385563884" expanded="true" signature="1474:1514" placeholder="SELECT * FRO... member" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VehicleAccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="e#7#93#0#PHP" expanded="true" />
+            <marker date="1462384910731" expanded="true" signature="585:790" placeholder="INSERT INTO vehicle... " />
+            <marker date="1462384910731" expanded="true" signature="1118:1313" placeholder="UPDATE vehic... " />
+            <marker date="1462384910731" expanded="true" signature="1118:1324" placeholder="UPDATE vehic... " />
+            <marker date="1462384910731" expanded="true" signature="1118:1342" placeholder="UPDATE vehic... " />
+            <marker date="1462384910731" expanded="true" signature="1124:1313" placeholder="INSERT INTO vehicle... " />
+            <marker date="1462384910731" expanded="true" signature="1669:1717" placeholder="DELETE FROM " />
+            <marker date="1462384910731" expanded="true" signature="1688:1717" placeholder="UPDATE vehic... " />
+            <marker date="1462384910731" expanded="true" signature="2124:2145" placeholder="SELECT * FRO... vehicle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RequestHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DriverAccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+          <folding>
+            <element signature="e#7#93#0#PHP" expanded="true" />
+            <marker date="1462385563884" expanded="true" signature="614:828" placeholder="INSERT INTO member... " />
+            <marker date="1462385563884" expanded="true" signature="929:1052" placeholder="INSERT INTO driver... " />
+            <marker date="1462385563884" expanded="true" signature="1474:1514" placeholder="SELECT * FRO... member" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VehicleAccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="e#7#93#0#PHP" expanded="true" />
+            <marker date="1462384910731" expanded="true" signature="585:790" placeholder="INSERT INTO vehicle... " />
+            <marker date="1462384910731" expanded="true" signature="1118:1313" placeholder="UPDATE vehic... " />
+            <marker date="1462384910731" expanded="true" signature="1118:1324" placeholder="UPDATE vehic... " />
+            <marker date="1462384910731" expanded="true" signature="1118:1342" placeholder="UPDATE vehic... " />
+            <marker date="1462384910731" expanded="true" signature="1124:1313" placeholder="INSERT INTO vehicle... " />
+            <marker date="1462384910731" expanded="true" signature="1669:1717" placeholder="DELETE FROM " />
+            <marker date="1462384910731" expanded="true" signature="1688:1717" placeholder="UPDATE vehic... " />
+            <marker date="1462384910731" expanded="true" signature="2124:2145" placeholder="SELECT * FRO... vehicle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RequestHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DriverAccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+          <folding>
+            <element signature="e#7#93#0#PHP" expanded="true" />
+            <marker date="1462385563884" expanded="true" signature="614:828" placeholder="INSERT INTO member... " />
+            <marker date="1462385563884" expanded="true" signature="929:1052" placeholder="INSERT INTO driver... " />
+            <marker date="1462385563884" expanded="true" signature="1474:1514" placeholder="SELECT * FRO... member" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/VehicleAccess.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -373,13 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db_config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -420,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db_config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -464,13 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -507,71 +662,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DBConnection.php">
+    <entry file="file://$PROJECT_DIR$/RequestHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JsonMessages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FillUpAccess.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="113" selection-start-line="22" selection-start-column="113" selection-end-line="22" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RequestHandlerMobile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.8965516">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Access.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DriverAccess.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-          <folding>
-            <element signature="e#7#93#0#PHP" expanded="true" />
-            <marker date="1462385563884" expanded="true" signature="614:828" placeholder="INSERT INTO member... " />
-            <marker date="1462385563884" expanded="true" signature="929:1052" placeholder="INSERT INTO driver... " />
-            <marker date="1462385563884" expanded="true" signature="1474:1514" placeholder="SELECT * FRO... member" />
-          </folding>
+        <state vertical-scroll-proportion="0.036036037">
+          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VehicleAccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="29.172413">
+        <state vertical-scroll-proportion="0.036036037">
           <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding>
             <element signature="e#7#93#0#PHP" expanded="true" />
@@ -587,10 +688,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RequestHandler.php">
+    <entry file="file://$PROJECT_DIR$/Access.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036101084">
-          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+        <state vertical-scroll-proportion="-9.655172">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FillUpAccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.275862">
+          <caret line="22" column="113" selection-start-line="22" selection-start-column="113" selection-end-line="22" selection-end-column="113" />
+          <folding>
+            <marker date="1462377252382" expanded="true" signature="495:804" placeholder="INSERT INTO fill_up... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DriverAccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.310345">
+          <caret line="43" column="9" selection-start-line="41" selection-start-column="8" selection-end-line="43" selection-end-column="9" />
+          <folding>
+            <element signature="e#7#93#0#PHP" expanded="true" />
+            <marker date="1462385563884" expanded="true" signature="614:828" placeholder="INSERT INTO member... " />
+            <marker date="1462385563884" expanded="true" signature="929:1052" placeholder="INSERT INTO driver... " />
+            <marker date="1462385563884" expanded="true" signature="1474:1514" placeholder="SELECT * FRO... member" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JsonMessages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.724138">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.551724">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding>
+            <element signature="e#7#93#0#PHP" expanded="true" />
+            <marker date="1464087240112" expanded="true" signature="566:573" placeholder="SELECT * FRO... user" />
+            <marker date="1464087240112" expanded="true" signature="566:787" placeholder="SELECT c.*,d... driver" />
+            <marker date="1464087240112" expanded="true" signature="636:771" placeholder="SELECT a.* F... member" />
+            <marker date="1464087240112" expanded="true" signature="675:753" placeholder="SELECT * FRO... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RequestHandlerMobile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5681818">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
           <folding />
         </state>
       </provider>
