@@ -95,6 +95,30 @@ class VehicleAccess implements Access
 
     public function select($data_array)
     {
-        // TODO: Implement select() method.
+        $vehicle_id = $data_array["vehicle_id"];
+        $query = "SELECT * FROM vehicle WHERE id='$vehicle_id'";
+        if($this->connection != null){
+            $result = $this->connection->query($query);
+            if($result->num_rows == 1){
+                $vehicle_data = array();
+                while($row =mysqli_fetch_assoc($result))
+                {
+                    $vehicle_data[] = $row;
+                }
+                $json_data = json_encode($vehicle_data,true);
+                $response_json = '{
+                            "error_code" : "0",
+                            "message" : '.$json_data.'
+                          }';
+                $this->disconnect();
+                return $response_json;
+            }
+            else{
+                return RESULT_NOT_FOUND;
+            }
+        }
+        else{
+            return CONNECTION_ERROR;
+        }
     }
 }

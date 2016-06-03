@@ -7,6 +7,7 @@
  * Time: 7:51 AM
  */
 require_once __DIR__.'/db_config.php';
+require_once __DIR__.'/JsonMessages.php';
 
 class DBConnection
 {
@@ -21,7 +22,7 @@ class DBConnection
             mysqli_close($con);
         }
         else{
-            // parse json
+            return CONNECTION_ERROR;
         }
 
     }

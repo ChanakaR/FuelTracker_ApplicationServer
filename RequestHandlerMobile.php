@@ -3,6 +3,8 @@
 require_once ("./VehicleAccess.php");
 require_once ("./FillUpAccess.php");
 require_once ("./UserValidator.php");
+require_once ("./TripAccess.php");
+require_once ("./StatCalculator.php");
 
 $method = $_GET['method'];
 
@@ -37,3 +39,57 @@ if($method == "login"){
 	echo $user_check->checkUser($data);
 }
 
+if($method == "new_trip"){
+	$data = array();
+	$data['driver_id'] = $_POST["driver_id"];
+	$data['vehicle_id'] = $_POST["vehicle_id"];
+	$data['description'] = $_POST["description"];
+	$data['start_odometer'] = $_POST["start_odometer"];
+	$data['end_odometer'] = $_POST["start_odometer"];
+	$data['start_time'] = "11.05"; 	//get current time of the server
+	$data['end_time'] = "11.05";
+	$data['date'] = "2016-05-27";	//get current date from the server
+
+	$trip = new TripAccess();
+	echo $trip->insertRow($data);
+}
+
+if($method == "a_trip"){
+	$data = array();
+	$data["trip_id"] = $_POST["trip_id"];
+
+	$trip = new TripAccess();
+	echo $trip->select($data);
+}
+
+if($method == "a_vehicle"){
+	$data = array();
+	$data["vehicle_id"] = $_POST["vehicle_id"];
+
+	$vehicle = new VehicleAccess();
+	echo $vehicle->select($data);
+}
+
+if($method == "trip_check"){
+	$data = array();
+	$data["driver_id"] = $_POST["driver_id"];
+
+	$trip = new TripAccess();
+	echo $trip->selectOnGoingTrip($data);
+}
+
+if($method == "my_stat"){
+	$data = array();
+	$data["driver_id"] = $_POST["driver_id"];
+
+	$stat = new StatCalculator();
+	echo $stat->getMyProgressForDriver($data);
+}
+
+if($method == "my_trip_list"){
+	$data = array();
+	$data["driver_id"] = $_POST["driver_id"];
+
+	$trip = new TripAccess();
+	echo $trip->select($data);
+}

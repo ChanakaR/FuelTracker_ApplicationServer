@@ -32,7 +32,6 @@ class DriverAccess implements Access
         }
         catch(Exception $ex){
             echo $ex->getMessage();
-            echo "errorrr";
         }
 
     }
