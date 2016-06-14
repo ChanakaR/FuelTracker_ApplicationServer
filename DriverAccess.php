@@ -66,9 +66,34 @@ class DriverAccess implements Access
         }
     }
 
+    public function selectAvailableDrivers(){
+
+    }
+
     public function updateRow($data_array)
     {
-        // TODO: Implement updateRow() method.
+        $id = $data_array["id"];
+        $licence_no =  $data_array["licence_no"];
+        $contact_no = $data_array["contact_no"];
+        $nic = $data_array["nic"];
+        $address = $data_array["address"];
+
+        $query_member = "UPDATE member SET nic = '$nic',contact_no = '$contact_no',address='$address' WHERE id='$id'";
+        $query_driver = "UPDATE driver SET driving_licence_no = '$licence_no' WHERE id='$id'";
+
+        if($this->connection->query($query_member)){
+            if($this->connection->query($query_driver)){
+                $this->disconnect();
+                return OPERATION_SUCCESS;
+            }
+            else{
+                $this->disconnect();
+                return DATA_UPDATE_ERROR;
+            }
+        }else{
+            $this->disconnect();
+            return DATA_UPDATE_ERROR;
+        }
     }
 
     public function deleteRow($data_array)

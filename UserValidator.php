@@ -21,10 +21,15 @@ class UserValidator
         $this->connection = $this->db->openConnection();
     }
 
-    public function checkUser($data){
+    public function checkUser($data,$from){
         $username = $data["username"];
         $encrypt_pwd = md5($data["password"]);
-        $query = "SELECT c.*,d.driver_id,d.driving_licence_no FROM driver d INNER JOIN (SELECT a.* FROM `member` a INNER JOIN (SELECT * FROM `user` WHERE user_name='$username' and password = '$encrypt_pwd') b ON a.id = b.id) c ON c.id=d.id";
+        $query = "";
+        if($from = "mobile"){
+            $query = "SELECT c.*,d.driver_id,d.driving_licence_no FROM driver d INNER JOIN (SELECT a.* FROM `member` a INNER JOIN (SELECT * FROM `user` WHERE user_name='$username' and password = '$encrypt_pwd') b ON a.id = b.id) c ON c.id=d.id";
+        }elseif($from == "web"){
+            // implement query for web application user checking
+        }
         if($this->connection != null){
             $result = $this->connection->query($query);
             if($result->num_rows == 1){

@@ -7,6 +7,9 @@
  */
 require_once ("./VehicleAccess.php");
 require_once ("./DriverAccess.php");
+require_once ("./OfficerAccess.php");
+require_once ("./StatCalculator.php");
+require_once ("./TripAccess.php");
 
 $method = $_SERVER['REQUEST_METHOD'];
 $json = file_get_contents('php://input');
@@ -26,6 +29,7 @@ switch ($method) {
         break;
 
     case 'GET':
+        decode_get_request();
         break;
 
     case 'DELETE':
@@ -57,14 +61,38 @@ function decode_post_request($array){
                 case "DRIVER":
                     $dr = new DriverAccess();
                     echo $dr->selectAll();
-                    //echo "huhuh";
+                    break;
+                case "OFFICER":
+                    $oa = new OfficerAccess();
+                    echo $oa->selectAll();
+                    break;
+                case "TRIP":
+                    $ta = new TripAccess();
+                    echo $ta->selectAll();
                     break;
                 default:
                     break;
             }
         }
-        elseif($array['select'] == 'NALL'){
+        elseif($array['select'] == 'N_ALL'){
+            $class = $array["class"];
+            switch($class){
+                case "VEHICLE":
+                    if($array['data'] == "AVA_VEHICLE"){
+                        $va = new VehicleAccess();
+                        echo $va->selectAll();
+                    }
+                    break;
 
+                case "DRIVER":
+                    if($array['data'] == "AVA_DRIVER"){
+                        $da = new DriverAccess();
+                        echo $da->selectAll();
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
     }
     elseif($array['method'] == "INSERT"){
@@ -77,6 +105,11 @@ function decode_post_request($array){
             case "DRIVER":
                 $dr = new DriverAccess();
                 echo $dr->insertRow($array['data']);
+                break;
+            case "OFFICER":
+                $oa = new OfficerAccess();
+                echo $oa->insertRow($array['data']);
+                break;
             default:
                 break;
         }
@@ -108,5 +141,15 @@ function decode_delete_request($array){
             default:
                 break;
         }
+    }
+}
+
+function decode_get_request(){
+    $method = $_GET["method"];
+    if($method == "vehicle-stat"){
+        $stat_cal = new StatCalculator();
+        http_response_code(200);
+        echo $stat_cal->getVehicleStatSummary($_GET["vehicle_id"]);
+
     }
 }

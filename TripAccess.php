@@ -23,13 +23,30 @@ class TripAccess implements Access
 
     public function selectAll()
     {
-        // TODO: Implement selectAll() method.
+        if($this->connection != null){
+            $query = "select a.*,b.licence_plate from vehicle b inner join (select trip.id,trip.start_time,trip.end_time,trip.date as start_date,trip.end_date,trip.description,trip.vehicle_id as vehicle,(trip.end_odometer-trip.start_odometer) as distance, driver.driver_id as driver from trip inner join driver on driver.id = trip.driver_id) a on a.vehicle = b.id";
+            $result = $this->connection->query($query);
+            $data_array = array();
+            while($row =mysqli_fetch_assoc($result))
+            {
+                $data_array[] = $row;
+            }
+            $json_data = json_encode($data_array,true);
+            $response_json = '{
+                            "error_code" : "0",
+                            "message" : '.$json_data.'
+                          }';
+            $this->disconnect();
+            return $response_json;
+        }else{
+            return CONNECTION_ERROR;
+        }
     }
 
     public function insertRow($data_array)
     {
         if($this->connection != null){
-            if(mysqli_query($this->connection,"INSERT INTO trip (start_time,end_time,date,description,driver_id,vehicle_id,start_odometer,end_odometer) VALUES ('$data_array[start_time]','$data_array[end_time]','$data_array[date]','$data_array[description]','$data_array[driver_id]','$data_array[vehicle_id]','$data_array[start_odometer]','$data_array[end_odometer]');")){
+            if(mysqli_query($this->connection,"INSERT INTO trip (start_time,end_time,date,end_datedescription,driver_id,vehicle_id,start_odometer,end_odometer) VALUES ('$data_array[start_time]','$data_array[end_time]','$data_array[date]','$data_array[end_date]','$data_array[description]','$data_array[driver_id]','$data_array[vehicle_id]','$data_array[start_odometer]','$data_array[end_odometer]');")){
                 $result = $this->connection->query("SELECT * FROM trip ORDER BY id DESC LIMIT 1");
                 $result_array = array();
                 while($row =mysqli_fetch_assoc($result))
@@ -54,7 +71,16 @@ class TripAccess implements Access
 
     public function updateRow($data_array)
     {
-        // TODO: Implement updateRow() method.
+        if($data_array["method"] == "end_trip"){
+            $query = "UPDATE trip SET end_odometer ='$data_array[end_odometer]',end_date='$data_array[end_date]',end_time='$data_array[end_time],on_trip='OFF' WHERE id='$data_array[trip_id]'";
+            if($this->connection->query($query)){
+                $this->disconnect();
+                return OPERATION_SUCCESS;
+            }else{
+                $this->disconnect();
+                return DATA_UPDATE_ERROR;
+            }
+        }
     }
 
     public function deleteRow($data_array)
@@ -65,16 +91,19 @@ class TripAccess implements Access
     public function select($data_array)
     {
         $query = null;
+        $result = null;
         if(array_key_exists("trip_id",$data_array)){
             $trip_id = $data_array["trip_id"];
             $query = "SELECT * FROM trip WHERE id='$trip_id'";
+            $result = $this->selectQueryExecutor($query);
         }
         elseif(array_key_exists("driver_id",$data_array)){
             $driver_id = $data_array["driver_id"];
-            $query = "SELECT a.id,a.start_time,a.end_time,a.date,a.start_odometer,a.end_odometer,a.description,b.licence_plate,b.v_class FROM trip a INNER JOIN vehicle b ON a.vehicle_id=b.id WHERE a.driver_id = '$driver_id'";
+            $query = "SELECT a.id,a.start_time,a.end_time,a.date,a.end_date,a.start_odometer,a.end_odometer,a.description,b.licence_plate,b.v_class FROM trip a INNER JOIN vehicle b ON a.vehicle_id=b.id WHERE a.driver_id = '$driver_id'";
+            $result = $this->getTripList($query);
         }
-        $result = $this->selectQueryExecutor($query);
         return $result;
+
     }
 
     public function selectOnGoingTrip($data_array){
@@ -115,6 +144,33 @@ class TripAccess implements Access
             return NULL_QUERY;
         }
     }
+
+    private function getTripList($query){
+        if($query !=  null){
+            if($this->connection != null){
+                $result = $this->connection->query($query);
+                $trip_data = array();
+                while($row =mysqli_fetch_assoc($result))
+                {
+                    $trip_data[] = $row;
+                }
+                $json_data = json_encode($trip_data,true);
+                $response_json = '{
+                        "error_code" : "0",
+                        "message" : '.$json_data.'
+                      }';
+                $this->disconnect();
+                return $response_json;
+            }
+            else{
+                return CONNECTION_ERROR;
+            }
+        }
+        else{
+            return NULL_QUERY;
+        }
+    }
+
 
     public function endTrip($data_array){
         $query = null;

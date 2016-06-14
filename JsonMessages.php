@@ -7,13 +7,13 @@
  */
 
 define('OPERATION_SUCCESS','{
-                    error_code : "1",
-                    message : "operation success"
+                    "error_code" : "1",
+                    "message" : "operation success"
                 }');
 
 define('OPERATION_UNSUCCESSFUL','{
-                    error_code : "2",
-                    message : "operation unsuccessful"
+                    "error_code" : "2",
+                    "message" : "operation unsuccessful"
                 }');
 
 define('CONNECTION_ERROR','{
@@ -40,3 +40,9 @@ define('MYSQL_QUERY_ERROR','{
                 "error_code" : "8",
                 "message" : "MySQL query executing error"
             }');
+
+define('DATA_UPDATE_ERROR','{
+                "error_code" : "9",
+                "message" : "data update error"
+            }');
+

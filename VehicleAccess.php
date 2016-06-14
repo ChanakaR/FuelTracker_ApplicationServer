@@ -87,6 +87,27 @@ class VehicleAccess implements Access
         }
     }
 
+    public function selectAvailableVehicle(){
+        if($this->connection != null){
+            $query = "SELECT * FROM vehicle ";
+            $result = $this->connection->query($query);
+            $vehicle_array = array();
+            while($row =mysqli_fetch_assoc($result))
+            {
+                $vehicle_array[] = $row;
+            }
+            $json_data = json_encode($vehicle_array,true);
+            $response_json = '{
+                            "error_code" : "0",
+                            "message" : '.$json_data.'
+                          }';
+            $this->disconnect();
+            return $response_json;
+        }else{
+            return CONNECTION_ERROR;
+        }
+    }
+
     public function disconnect(){
         if($this->db != null){
             $this->db->closeConnection($this->connection);
