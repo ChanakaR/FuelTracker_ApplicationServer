@@ -89,7 +89,7 @@ class VehicleAccess implements Access
 
     public function selectAvailableVehicle(){
         if($this->connection != null){
-            $query = "SELECT * FROM vehicle ";
+            $query = "select c.id,c.licence_plate,c.make,c.model,c.year,c.fuel_type,c.v_class from (select a.*,b.id as trip_id from vehicle a left outer join (select id,vehicle_id from trip where on_trip='ON') b on a.id = b.vehicle_id) c where c.trip_id is null";
             $result = $this->connection->query($query);
             $vehicle_array = array();
             while($row =mysqli_fetch_assoc($result))

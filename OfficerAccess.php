@@ -62,12 +62,34 @@ class OfficerAccess implements Access
 
     public function updateRow($data_array)
     {
-        // TODO: Implement updateRow() method.
+        if($this->connection != null){
+            try{
+                mysqli_query($this->connection,"START TRANSACTION;");
+                mysqli_query($this->connection,"UPDATE member SET f_name='$data_array[first_name]',l_name='$data_array[last_name]',address='$data_array[address]',contact_no='$data_array[contact_no]',gender='$data_array[gender]',nic='$data_array[nic]' WHERE id='$data_array[id]';");
+                mysqli_query($this->connection,"UPDATE officer SET officer_id='$data_array[officer_id]' WHERE id='$data_array[id]';");
+                mysqli_query($this->connection,"COMMIT");
+                return OPERATION_SUCCESS;
+            }
+            catch(Exception $ex){
+                echo $ex->getMessage();
+                return OPERATION_UNSUCCESSFUL;
+            }
+        }else{
+            return CONNECTION_ERROR;
+        }
     }
 
     public function deleteRow($data_array)
     {
-        // TODO: Implement deleteRow() method.
+        if($this->connection != null){
+            if(mysqli_query($this->connection,"DELETE FROM member WHERE id='$data_array[id]';")){
+                return OPERATION_SUCCESS;
+            }else{
+                return OPERATION_UNSUCCESSFUL;
+            }
+        }else{
+            return CONNECTION_ERROR;
+        }
     }
 
     public function select($data_array)

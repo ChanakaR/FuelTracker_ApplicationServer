@@ -255,4 +255,56 @@ class StatCalculator
             return "CON_ER";
         }
     }
+
+    public function getVehicleStat($data_array){
+        $vehicle_id = $data_array;
+        $millage_log = $this->getMillageByVehicleId($vehicle_id);
+        $cost_log = $this->getCostByVehicleId($vehicle_id);
+
+        if($millage_log != "CON_ER" AND $cost_log != "CON_ER"){
+            $response_json = '{
+                    "error_code" : "0",
+                    "millage_log" : '.$millage_log.',
+                    "cost_log" : '.$cost_log.'
+
+            }';
+            $this->closeConnecion();
+            return $response_json;
+        }
+        else{
+            return CONNECTION_ERROR;
+        }
+    }
+
+    private function getMillageByVehicleId($vehicle_id){
+        if($this->connection != null){
+            $query = "SELECT SUM(end_odometer-start_odometer) AS distance ,MONTH(date) AS month,YEAR(date) as year FROM `trip` WHERE on_trip = 'OFF' AND vehicle_id='$vehicle_id' GROUP BY YEAR(date),MONTH(date)";
+            $result = $this->connection->query($query);
+            $millage_array = array();
+            while($row =mysqli_fetch_assoc($result))
+            {
+                $millage_array[] = $row;
+            }
+            $json_data = json_encode($millage_array,true);
+            return $json_data;
+        }else{
+            return "CON_ER";
+        }
+    }
+
+    private function getCostByVehicleId($vehicle_id){
+        if($this->connection != null){
+            $query = "SELECT SUM(a.total_price) AS cost,YEAR(a.fill_date) as year,MONTH(a.fill_date) as month FROM (SELECT fill_up.* FROM fill_up INNER JOIN trip ON trip.id = fill_up.trip_id WHERE trip.vehicle_id = '$vehicle_id') a GROUP BY MONTH(a.fill_date) ORDER BY year,month";
+            $result = $this->connection->query($query);
+            $cost_array = array();
+            while($row =mysqli_fetch_assoc($result))
+            {
+                $cost_array[] = $row;
+            }
+            $json_data = json_encode($cost_array,true);
+            return $json_data;
+        }else{
+            return "CON_ER";
+        }
+    }
 }

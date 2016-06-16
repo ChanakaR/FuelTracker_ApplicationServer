@@ -102,6 +102,11 @@ class TripAccess implements Access
             $query = "SELECT a.id,a.start_time,a.end_time,a.date,a.end_date,a.start_odometer,a.end_odometer,a.description,b.licence_plate,b.v_class FROM trip a INNER JOIN vehicle b ON a.vehicle_id=b.id WHERE a.driver_id = '$driver_id'";
             $result = $this->getTripList($query);
         }
+        elseif(array_key_exists("vehicle_id",$data_array)){
+            $vehicle_id = $data_array["vehicle_id"];
+            $query = "SELECT a.id,a.start_time,a.end_time,a.date,a.end_date,(a.end_odometer-a.start_odometer) as distance,a.description,b.driver_id FROM trip a INNER JOIN driver b ON a.driver_id=b.id WHERE a.vehicle_id = '$vehicle_id'";
+            $result = $this->getTripList($query);
+        }
         return $result;
 
     }

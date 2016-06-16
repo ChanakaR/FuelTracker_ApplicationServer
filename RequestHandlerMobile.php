@@ -36,7 +36,7 @@ if($method == "login"){
 	$data['password']=$_POST["password"];
 
 	$user_check = new UserValidator();
-	echo $user_check->checkUser($data,"mobile");
+	echo $user_check->checkUser($data);
 }
 
 if($method == "new_trip"){
@@ -105,7 +105,7 @@ if($method == "update_account"){
 	$data["licence_no"] =  $_POST["licence_no"];
 
 	$driver= new DriverAccess();
-	echo $driver->updateRow($data);
+	echo $driver->updateRow($data,"driver");
 }
 
 if($method == "update_user"){

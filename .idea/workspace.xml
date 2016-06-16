@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd132b0b-4ede-4e80-9acf-0ae8a53236c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OfficerAccess.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UserAccess.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DriverAccess.php" afterPath="$PROJECT_DIR$/DriverAccess.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FillUpAccess.php" afterPath="$PROJECT_DIR$/FillUpAccess.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsonMessages.php" afterPath="$PROJECT_DIR$/JsonMessages.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OfficerAccess.php" afterPath="$PROJECT_DIR$/OfficerAccess.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RequestHandler.php" afterPath="$PROJECT_DIR$/RequestHandler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RequestHandlerMobile.php" afterPath="$PROJECT_DIR$/RequestHandlerMobile.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StatCalculator.php" afterPath="$PROJECT_DIR$/StatCalculator.php" />
@@ -35,87 +32,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RequestHandler.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RequestHandler.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RequestHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="21.37931">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.7472924">
+              <caret line="100" column="53" selection-start-line="100" selection-start-column="53" selection-end-line="100" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TripAccess.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TripAccess.php">
+      <file leaf-file-name="VehicleAccess.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VehicleAccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6498195">
-              <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+            <state vertical-scroll-proportion="-9.793103">
+              <caret line="91" column="261" selection-start-line="91" selection-start-column="261" selection-end-line="91" selection-end-column="261" />
               <folding>
-                <marker date="1465889094598" expanded="true" signature="543:884" placeholder="select a.*,b... vehicle" />
-                <marker date="1465889094598" expanded="true" signature="597:861" placeholder="select trip.... trip" />
-                <marker date="1465889094598" expanded="true" signature="1590:1941" placeholder="INSERT INTO trip... " />
-                <marker date="1465889094598" expanded="true" signature="1999:2042" placeholder="SELECT * FRO... trip" />
-                <marker date="1465889094598" expanded="true" signature="2845:2977" placeholder="UPDATE trip " />
-                <marker date="1465889094598" expanded="true" signature="2845:3013" placeholder="UPDATE trip " />
-                <marker date="1465889094598" expanded="true" signature="3592:3630" placeholder="SELECT * FRO... trip" />
-                <marker date="1465889094598" expanded="true" signature="3833:4045" placeholder="SELECT * FRO... trip" />
-                <marker date="1465889094598" expanded="true" signature="4257:4323" placeholder="SELECT * FRO... trip" />
-                <marker date="1465889094598" expanded="true" signature="6398:6449" placeholder="UPDATE trip " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonMessages.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JsonMessages.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.8965516">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OfficerAccess.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OfficerAccess.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5517242">
-              <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
-              <folding>
-                <element signature="e#7#92#0#PHP" expanded="true" />
-                <marker date="1465793514507" expanded="true" signature="546:587" placeholder="SELECT * FRO... member" />
-                <marker date="1465793514507" expanded="true" signature="1340:1554" placeholder="INSERT INTO member... " />
-                <marker date="1465793514507" expanded="true" signature="1655:1736" placeholder="INSERT INTO driver... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatCalculator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StatCalculator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.275862">
-              <caret line="135" column="53" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
-              <folding>
-                <marker date="1465832118476" expanded="true" signature="1608:1861" placeholder="SELECT SUM(e... " />
-                <marker date="1465832118476" expanded="true" signature="1690:1835" placeholder="SELECT (end_... " />
-                <marker date="1465832118476" expanded="true" signature="1690:1836" placeholder="SELECT (end_... " />
-                <marker date="1465832118476" expanded="true" signature="2355:2599" placeholder="SELECT SUM(e... " />
-                <marker date="1465832118476" expanded="true" signature="2425:2573" placeholder="SELECT COUNT... trip" />
-                <marker date="1465832118476" expanded="true" signature="3091:3226" placeholder="SELECT SUM(e... " />
-                <marker date="1465832118476" expanded="true" signature="3713:3720" placeholder="SELECT * FRO... member" />
-                <marker date="1465832118476" expanded="true" signature="3713:3897" placeholder="SELECT drive... " />
-                <marker date="1465832118476" expanded="true" signature="4381:4616" placeholder="SELECT SUM(a... " />
-                <marker date="1465832118476" expanded="true" signature="4381:4631" placeholder="SELECT SUM(a... " />
-                <marker date="1465832118476" expanded="true" signature="6615:6725" placeholder="select a.* f... fill_up" />
-                <marker date="1465832118476" expanded="true" signature="6615:6741" placeholder="select a.* f... fill_up" />
-                <marker date="1465832118476" expanded="true" signature="6653:6702" placeholder="select * fro... trip" />
-                <marker date="1465832118476" expanded="true" signature="7623:7842" placeholder="select b.dri... driver" />
-                <marker date="1465832118476" expanded="true" signature="7668:7817" placeholder="select a.* f... driver_id" />
-                <marker date="1465832118476" expanded="true" signature="7685:7786" placeholder="select drive... trip" />
-                <marker date="1465832118476" expanded="true" signature="8277:8403" placeholder="select b.dri... driver" />
-                <marker date="1465832118476" expanded="true" signature="8849:8970" placeholder="SELECT *,(en... trip" />
-                <marker date="1465832118476" expanded="true" signature="9415:9530" placeholder="select * fro... trip" />
+                <marker date="1466043487802" expanded="true" signature="585:790" placeholder="INSERT INTO vehicle... " />
+                <marker date="1466043487802" expanded="true" signature="1118:1342" placeholder="UPDATE vehic... " />
+                <marker date="1466043487802" expanded="true" signature="1669:1717" placeholder="DELETE FROM " />
+                <marker date="1466043487802" expanded="true" signature="2124:2145" placeholder="SELECT * FRO... vehicle" />
+                <marker date="1466043487802" expanded="true" signature="2833:3072" placeholder="select c.id,... *" />
+                <marker date="1466043487802" expanded="true" signature="2911:3045" placeholder="select a.*,b... vehicle" />
+                <marker date="1466043487802" expanded="true" signature="2970:3019" placeholder="select id,ve... trip" />
+                <marker date="1466043487802" expanded="true" signature="3906:3950" placeholder="SELECT * FRO... vehicle" />
               </folding>
             </state>
           </provider>
@@ -124,32 +64,100 @@
       <file leaf-file-name="DriverAccess.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DriverAccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.3448277">
-              <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+            <state vertical-scroll-proportion="-7.724138">
+              <caret line="70" column="258" selection-start-line="70" selection-start-column="258" selection-end-line="70" selection-end-column="258" />
               <folding>
-                <marker date="1465753249683" expanded="true" signature="614:828" placeholder="INSERT INTO member... " />
-                <marker date="1465753249683" expanded="true" signature="929:1052" placeholder="INSERT INTO driver... " />
-                <marker date="1465753249683" expanded="true" signature="1446:1486" placeholder="SELECT * FRO... member" />
-                <marker date="1465753249683" expanded="true" signature="2406:2497" placeholder="UPDATE drive... " />
-                <marker date="1465753249683" expanded="true" signature="2525:2565" placeholder="UPDATE drive... " />
-                <marker date="1465753249683" expanded="true" signature="2525:2592" placeholder="UPDATE trip " />
+                <marker date="1466044627713" expanded="true" signature="614:828" placeholder="INSERT INTO member... " />
+                <marker date="1466044627713" expanded="true" signature="929:1052" placeholder="INSERT INTO driver... " />
+                <marker date="1466044627713" expanded="true" signature="1446:1486" placeholder="SELECT * FRO... member" />
+                <marker date="1466044627713" expanded="true" signature="2174:2415" placeholder="select c.*,d... member" />
+                <marker date="1466044627713" expanded="true" signature="2244:2375" placeholder="select a.*,b... driver" />
+                <marker date="1466044627713" expanded="true" signature="2302:2350" placeholder="select id,dr... trip" />
+                <marker date="1466044627713" expanded="true" signature="3280:3371" placeholder="UPDATE drive... " />
+                <marker date="1466044627713" expanded="true" signature="3399:3439" placeholder="UPDATE drive... " />
+                <marker date="1466044627713" expanded="true" signature="3399:3501" placeholder="UPDATE trip " />
+                <marker date="1466044627713" expanded="true" signature="4144:4373" placeholder="UPDATE membe... " />
+                <marker date="1466044627713" expanded="true" signature="4426:4551" placeholder="UPDATE drive... " />
+                <marker date="1466044627713" expanded="true" signature="5009:5054" placeholder="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VehicleAccess.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VehicleAccess.php">
+      <file leaf-file-name="RequestHandlerMobile.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RequestHandlerMobile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-48.275864">
-              <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+            <state vertical-scroll-proportion="-6.206897">
+              <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserValidator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserValidator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.965517">
+              <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
               <folding>
-                <marker date="1465752795952" expanded="true" signature="585:790" placeholder="INSERT INTO vehicle... " />
-                <marker date="1465752795952" expanded="true" signature="1118:1342" placeholder="UPDATE vehic... " />
-                <marker date="1465752795952" expanded="true" signature="1669:1717" placeholder="DELETE FROM " />
-                <marker date="1465752795952" expanded="true" signature="2124:2145" placeholder="SELECT * FRO... vehicle" />
-                <marker date="1465752795952" expanded="true" signature="2833:2854" placeholder="SELECT * FRO... vehicle" />
-                <marker date="1465752795952" expanded="true" signature="3689:3733" placeholder="SELECT * FRO... vehicle" />
+                <marker date="1466035243721" expanded="true" signature="566:787" placeholder="SELECT c.*,d... driver" />
+                <marker date="1466035243721" expanded="true" signature="636:771" placeholder="SELECT a.* F... member" />
+                <marker date="1466035243721" expanded="true" signature="675:753" placeholder="SELECT * FRO... user" />
+                <marker date="1466035243721" expanded="true" signature="1714:1906" placeholder="select c.*,u... *" />
+                <marker date="1466035243721" expanded="true" signature="1756:1829" placeholder="select a.*,b... member" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OfficerAccess.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OfficerAccess.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+              <folding>
+                <element signature="e#7#92#0#PHP" expanded="true" />
+                <marker date="1465993751216" expanded="true" signature="546:587" placeholder="SELECT * FRO... member" />
+                <marker date="1465993751216" expanded="true" signature="1340:1554" placeholder="INSERT INTO member... " />
+                <marker date="1465993751216" expanded="true" signature="1655:1736" placeholder="INSERT INTO driver... " />
+                <marker date="1465993751216" expanded="true" signature="2192:2394" placeholder="UPDATE membe... " />
+                <marker date="1465993751216" expanded="true" signature="2192:2421" placeholder="UPDATE membe... " />
+                <marker date="1465993751216" expanded="true" signature="2198:2394" placeholder="INSERT INTO member... " />
+                <marker date="1465993751216" expanded="true" signature="2474:2556" placeholder="UPDATE offic... " />
+                <marker date="1465993751216" expanded="true" signature="2480:2529" placeholder="INSERT INTO officer... " />
+                <marker date="1465993751216" expanded="true" signature="3014:3059" placeholder="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatCalculator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StatCalculator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="266" column="32" selection-start-line="266" selection-start-column="32" selection-end-line="266" selection-end-column="32" />
+              <folding>
+                <marker date="1465960552629" expanded="true" signature="1608:1861" placeholder="SELECT SUM(e... " />
+                <marker date="1465960552629" expanded="true" signature="1690:1835" placeholder="SELECT (end_... " />
+                <marker date="1465960552629" expanded="true" signature="1690:1836" placeholder="SELECT (end_... " />
+                <marker date="1465960552629" expanded="true" signature="2355:2599" placeholder="SELECT SUM(e... " />
+                <marker date="1465960552629" expanded="true" signature="2425:2573" placeholder="SELECT COUNT... trip" />
+                <marker date="1465960552629" expanded="true" signature="3091:3226" placeholder="SELECT SUM(e... " />
+                <marker date="1465960552629" expanded="true" signature="3713:3720" placeholder="SELECT * FRO... member" />
+                <marker date="1465960552629" expanded="true" signature="3713:3897" placeholder="SELECT drive... " />
+                <marker date="1465960552629" expanded="true" signature="4381:4616" placeholder="SELECT SUM(a... " />
+                <marker date="1465960552629" expanded="true" signature="4381:4631" placeholder="SELECT SUM(a... " />
+                <marker date="1465960552629" expanded="true" signature="6615:6725" placeholder="select a.* f... fill_up" />
+                <marker date="1465960552629" expanded="true" signature="6615:6741" placeholder="select a.* f... fill_up" />
+                <marker date="1465960552629" expanded="true" signature="6653:6702" placeholder="select * fro... trip" />
+                <marker date="1465960552629" expanded="true" signature="7623:7842" placeholder="select b.dri... driver" />
+                <marker date="1465960552629" expanded="true" signature="7668:7817" placeholder="select a.* f... driver_id" />
+                <marker date="1465960552629" expanded="true" signature="7685:7786" placeholder="select drive... trip" />
+                <marker date="1465960552629" expanded="true" signature="8277:8403" placeholder="select b.dri... driver" />
+                <marker date="1465960552629" expanded="true" signature="8849:8970" placeholder="SELECT *,(en... trip" />
+                <marker date="1465960552629" expanded="true" signature="9415:9530" placeholder="select * fro... trip" />
+                <marker date="1465960552629" expanded="true" signature="10588:10775" placeholder="SELECT SUM(e... " />
+                <marker date="1465960552629" expanded="true" signature="11260:11517" placeholder="SELECT SUM(a... " />
               </folding>
             </state>
           </provider>
@@ -171,15 +179,15 @@
         <option value="$PROJECT_DIR$/DBConnection.php" />
         <option value="$PROJECT_DIR$/UserAccess.php" />
         <option value="$PROJECT_DIR$/FillUpAccess.php" />
-        <option value="$PROJECT_DIR$/VehicleAccess.php" />
-        <option value="$PROJECT_DIR$/DriverAccess.php" />
+        <option value="$PROJECT_DIR$/JsonMessages.php" />
+        <option value="$PROJECT_DIR$/TripAccess.php" />
+        <option value="$PROJECT_DIR$/StatCalculator.php" />
+        <option value="$PROJECT_DIR$/OfficerAccess.php" />
         <option value="$PROJECT_DIR$/RequestHandlerMobile.php" />
         <option value="$PROJECT_DIR$/UserValidator.php" />
-        <option value="$PROJECT_DIR$/JsonMessages.php" />
-        <option value="$PROJECT_DIR$/OfficerAccess.php" />
-        <option value="$PROJECT_DIR$/StatCalculator.php" />
         <option value="$PROJECT_DIR$/RequestHandler.php" />
-        <option value="$PROJECT_DIR$/TripAccess.php" />
+        <option value="$PROJECT_DIR$/VehicleAccess.php" />
+        <option value="$PROJECT_DIR$/DriverAccess.php" />
       </list>
     </option>
   </component>
@@ -223,6 +231,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -244,7 +253,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,31 +313,37 @@
       <option name="project" value="LOCAL" />
       <updated>1464962916744</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add trip access and update mobile request handler">
+      <created>1465892850546</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1465892850546</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22087745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22692889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -346,7 +360,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add user validator class, add response to login in mobile request handler and add invalid user message into json messages" />
     <MESSAGE value="add more features to mobile request handler, such that stat calculator, trip by driver id, etc" />
-    <option name="LAST_COMMIT_MESSAGE" value="add more features to mobile request handler, such that stat calculator, trip by driver id, etc" />
+    <MESSAGE value="Add trip access and update mobile request handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add trip access and update mobile request handler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -619,14 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DBConnection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6396396">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_0.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34954956">
@@ -648,124 +655,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RequestHandlerMobile.php">
+    <entry file="file://$PROJECT_DIR$/JsonMessages.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TripAccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.036101084">
+          <caret line="152" column="21" selection-start-line="152" selection-start-column="21" selection-end-line="152" selection-end-column="21" />
+          <folding>
+            <marker date="1465907178091" expanded="true" signature="543:884" placeholder="select a.*,b... vehicle" />
+            <marker date="1465907178091" expanded="true" signature="597:861" placeholder="select trip.... trip" />
+            <marker date="1465907178091" expanded="true" signature="1590:1941" placeholder="INSERT INTO trip... " />
+            <marker date="1465907178091" expanded="true" signature="1999:2042" placeholder="SELECT * FRO... trip" />
+            <marker date="1465907178091" expanded="true" signature="2845:2977" placeholder="UPDATE trip " />
+            <marker date="1465907178091" expanded="true" signature="2845:3013" placeholder="UPDATE trip " />
+            <marker date="1465907178091" expanded="true" signature="3592:3630" placeholder="SELECT * FRO... trip" />
+            <marker date="1465907178091" expanded="true" signature="3833:4045" placeholder="SELECT * FRO... trip" />
+            <marker date="1465907178091" expanded="true" signature="4243:4297" placeholder="SELECT a.id,... trip" />
+            <marker date="1465907178091" expanded="true" signature="4243:4455" placeholder="SELECT a.id,... trip" />
+            <marker date="1465907178091" expanded="true" signature="4667:4733" placeholder="SELECT * FRO... trip" />
+            <marker date="1465907178091" expanded="true" signature="6808:6859" placeholder="UPDATE trip " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63898915">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatCalculator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="266" column="32" selection-start-line="266" selection-start-column="32" selection-end-line="266" selection-end-column="32" />
+          <folding>
+            <marker date="1465960552629" expanded="true" signature="1608:1861" placeholder="SELECT SUM(e... " />
+            <marker date="1465960552629" expanded="true" signature="1690:1835" placeholder="SELECT (end_... " />
+            <marker date="1465960552629" expanded="true" signature="1690:1836" placeholder="SELECT (end_... " />
+            <marker date="1465960552629" expanded="true" signature="2355:2599" placeholder="SELECT SUM(e... " />
+            <marker date="1465960552629" expanded="true" signature="2425:2573" placeholder="SELECT COUNT... trip" />
+            <marker date="1465960552629" expanded="true" signature="3091:3226" placeholder="SELECT SUM(e... " />
+            <marker date="1465960552629" expanded="true" signature="3713:3720" placeholder="SELECT * FRO... member" />
+            <marker date="1465960552629" expanded="true" signature="3713:3897" placeholder="SELECT drive... " />
+            <marker date="1465960552629" expanded="true" signature="4381:4616" placeholder="SELECT SUM(a... " />
+            <marker date="1465960552629" expanded="true" signature="4381:4631" placeholder="SELECT SUM(a... " />
+            <marker date="1465960552629" expanded="true" signature="6615:6725" placeholder="select a.* f... fill_up" />
+            <marker date="1465960552629" expanded="true" signature="6615:6741" placeholder="select a.* f... fill_up" />
+            <marker date="1465960552629" expanded="true" signature="6653:6702" placeholder="select * fro... trip" />
+            <marker date="1465960552629" expanded="true" signature="7623:7842" placeholder="select b.dri... driver" />
+            <marker date="1465960552629" expanded="true" signature="7668:7817" placeholder="select a.* f... driver_id" />
+            <marker date="1465960552629" expanded="true" signature="7685:7786" placeholder="select drive... trip" />
+            <marker date="1465960552629" expanded="true" signature="8277:8403" placeholder="select b.dri... driver" />
+            <marker date="1465960552629" expanded="true" signature="8849:8970" placeholder="SELECT *,(en... trip" />
+            <marker date="1465960552629" expanded="true" signature="9415:9530" placeholder="select * fro... trip" />
+            <marker date="1465960552629" expanded="true" signature="10588:10775" placeholder="SELECT SUM(e... " />
+            <marker date="1465960552629" expanded="true" signature="11260:11517" placeholder="SELECT SUM(a... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OfficerAccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+          <folding>
+            <element signature="e#7#92#0#PHP" expanded="true" />
+            <marker date="1465993751216" expanded="true" signature="546:587" placeholder="SELECT * FRO... member" />
+            <marker date="1465993751216" expanded="true" signature="1340:1554" placeholder="INSERT INTO member... " />
+            <marker date="1465993751216" expanded="true" signature="1655:1736" placeholder="INSERT INTO driver... " />
+            <marker date="1465993751216" expanded="true" signature="2192:2394" placeholder="UPDATE membe... " />
+            <marker date="1465993751216" expanded="true" signature="2192:2421" placeholder="UPDATE membe... " />
+            <marker date="1465993751216" expanded="true" signature="2198:2394" placeholder="INSERT INTO member... " />
+            <marker date="1465993751216" expanded="true" signature="2474:2556" placeholder="UPDATE offic... " />
+            <marker date="1465993751216" expanded="true" signature="2480:2529" placeholder="INSERT INTO officer... " />
+            <marker date="1465993751216" expanded="true" signature="3014:3059" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RequestHandlerMobile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.206897">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UserValidator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54151624">
-          <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JsonMessages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.8965516">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OfficerAccess.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5517242">
-          <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
+        <state vertical-scroll-proportion="-24.965517">
+          <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
           <folding>
-            <element signature="e#7#92#0#PHP" expanded="true" />
-            <marker date="1465793514507" expanded="true" signature="546:587" placeholder="SELECT * FRO... member" />
-            <marker date="1465793514507" expanded="true" signature="1340:1554" placeholder="INSERT INTO member... " />
-            <marker date="1465793514507" expanded="true" signature="1655:1736" placeholder="INSERT INTO driver... " />
+            <marker date="1466035243721" expanded="true" signature="566:787" placeholder="SELECT c.*,d... driver" />
+            <marker date="1466035243721" expanded="true" signature="636:771" placeholder="SELECT a.* F... member" />
+            <marker date="1466035243721" expanded="true" signature="675:753" placeholder="SELECT * FRO... user" />
+            <marker date="1466035243721" expanded="true" signature="1714:1906" placeholder="select c.*,u... *" />
+            <marker date="1466035243721" expanded="true" signature="1756:1829" placeholder="select a.*,b... member" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VehicleAccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-48.275864">
-          <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+        <state vertical-scroll-proportion="-9.793103">
+          <caret line="91" column="261" selection-start-line="91" selection-start-column="261" selection-end-line="91" selection-end-column="261" />
           <folding>
-            <marker date="1465752795952" expanded="true" signature="585:790" placeholder="INSERT INTO vehicle... " />
-            <marker date="1465752795952" expanded="true" signature="1118:1342" placeholder="UPDATE vehic... " />
-            <marker date="1465752795952" expanded="true" signature="1669:1717" placeholder="DELETE FROM " />
-            <marker date="1465752795952" expanded="true" signature="2124:2145" placeholder="SELECT * FRO... vehicle" />
-            <marker date="1465752795952" expanded="true" signature="2833:2854" placeholder="SELECT * FRO... vehicle" />
-            <marker date="1465752795952" expanded="true" signature="3689:3733" placeholder="SELECT * FRO... vehicle" />
+            <marker date="1466043487802" expanded="true" signature="585:790" placeholder="INSERT INTO vehicle... " />
+            <marker date="1466043487802" expanded="true" signature="1118:1342" placeholder="UPDATE vehic... " />
+            <marker date="1466043487802" expanded="true" signature="1669:1717" placeholder="DELETE FROM " />
+            <marker date="1466043487802" expanded="true" signature="2124:2145" placeholder="SELECT * FRO... vehicle" />
+            <marker date="1466043487802" expanded="true" signature="2833:3072" placeholder="select c.id,... *" />
+            <marker date="1466043487802" expanded="true" signature="2911:3045" placeholder="select a.*,b... vehicle" />
+            <marker date="1466043487802" expanded="true" signature="2970:3019" placeholder="select id,ve... trip" />
+            <marker date="1466043487802" expanded="true" signature="3906:3950" placeholder="SELECT * FRO... vehicle" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DriverAccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.3448277">
-          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+        <state vertical-scroll-proportion="-7.724138">
+          <caret line="70" column="258" selection-start-line="70" selection-start-column="258" selection-end-line="70" selection-end-column="258" />
           <folding>
-            <marker date="1465753249683" expanded="true" signature="614:828" placeholder="INSERT INTO member... " />
-            <marker date="1465753249683" expanded="true" signature="929:1052" placeholder="INSERT INTO driver... " />
-            <marker date="1465753249683" expanded="true" signature="1446:1486" placeholder="SELECT * FRO... member" />
-            <marker date="1465753249683" expanded="true" signature="2406:2497" placeholder="UPDATE drive... " />
-            <marker date="1465753249683" expanded="true" signature="2525:2565" placeholder="UPDATE drive... " />
-            <marker date="1465753249683" expanded="true" signature="2525:2592" placeholder="UPDATE trip " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StatCalculator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.275862">
-          <caret line="135" column="53" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
-          <folding>
-            <marker date="1465832118476" expanded="true" signature="1608:1861" placeholder="SELECT SUM(e... " />
-            <marker date="1465832118476" expanded="true" signature="1690:1835" placeholder="SELECT (end_... " />
-            <marker date="1465832118476" expanded="true" signature="1690:1836" placeholder="SELECT (end_... " />
-            <marker date="1465832118476" expanded="true" signature="2355:2599" placeholder="SELECT SUM(e... " />
-            <marker date="1465832118476" expanded="true" signature="2425:2573" placeholder="SELECT COUNT... trip" />
-            <marker date="1465832118476" expanded="true" signature="3091:3226" placeholder="SELECT SUM(e... " />
-            <marker date="1465832118476" expanded="true" signature="3713:3720" placeholder="SELECT * FRO... member" />
-            <marker date="1465832118476" expanded="true" signature="3713:3897" placeholder="SELECT drive... " />
-            <marker date="1465832118476" expanded="true" signature="4381:4616" placeholder="SELECT SUM(a... " />
-            <marker date="1465832118476" expanded="true" signature="4381:4631" placeholder="SELECT SUM(a... " />
-            <marker date="1465832118476" expanded="true" signature="6615:6725" placeholder="select a.* f... fill_up" />
-            <marker date="1465832118476" expanded="true" signature="6615:6741" placeholder="select a.* f... fill_up" />
-            <marker date="1465832118476" expanded="true" signature="6653:6702" placeholder="select * fro... trip" />
-            <marker date="1465832118476" expanded="true" signature="7623:7842" placeholder="select b.dri... driver" />
-            <marker date="1465832118476" expanded="true" signature="7668:7817" placeholder="select a.* f... driver_id" />
-            <marker date="1465832118476" expanded="true" signature="7685:7786" placeholder="select drive... trip" />
-            <marker date="1465832118476" expanded="true" signature="8277:8403" placeholder="select b.dri... driver" />
-            <marker date="1465832118476" expanded="true" signature="8849:8970" placeholder="SELECT *,(en... trip" />
-            <marker date="1465832118476" expanded="true" signature="9415:9530" placeholder="select * fro... trip" />
+            <marker date="1466044627713" expanded="true" signature="614:828" placeholder="INSERT INTO member... " />
+            <marker date="1466044627713" expanded="true" signature="929:1052" placeholder="INSERT INTO driver... " />
+            <marker date="1466044627713" expanded="true" signature="1446:1486" placeholder="SELECT * FRO... member" />
+            <marker date="1466044627713" expanded="true" signature="2174:2415" placeholder="select c.*,d... member" />
+            <marker date="1466044627713" expanded="true" signature="2244:2375" placeholder="select a.*,b... driver" />
+            <marker date="1466044627713" expanded="true" signature="2302:2350" placeholder="select id,dr... trip" />
+            <marker date="1466044627713" expanded="true" signature="3280:3371" placeholder="UPDATE drive... " />
+            <marker date="1466044627713" expanded="true" signature="3399:3439" placeholder="UPDATE drive... " />
+            <marker date="1466044627713" expanded="true" signature="3399:3501" placeholder="UPDATE trip " />
+            <marker date="1466044627713" expanded="true" signature="4144:4373" placeholder="UPDATE membe... " />
+            <marker date="1466044627713" expanded="true" signature="4426:4551" placeholder="UPDATE drive... " />
+            <marker date="1466044627713" expanded="true" signature="5009:5054" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RequestHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="21.37931">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.7472924">
+          <caret line="100" column="53" selection-start-line="100" selection-start-column="53" selection-end-line="100" selection-end-column="53" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TripAccess.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6498195">
-          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
-          <folding>
-            <marker date="1465889094598" expanded="true" signature="543:884" placeholder="select a.*,b... vehicle" />
-            <marker date="1465889094598" expanded="true" signature="597:861" placeholder="select trip.... trip" />
-            <marker date="1465889094598" expanded="true" signature="1590:1941" placeholder="INSERT INTO trip... " />
-            <marker date="1465889094598" expanded="true" signature="1999:2042" placeholder="SELECT * FRO... trip" />
-            <marker date="1465889094598" expanded="true" signature="2845:2977" placeholder="UPDATE trip " />
-            <marker date="1465889094598" expanded="true" signature="2845:3013" placeholder="UPDATE trip " />
-            <marker date="1465889094598" expanded="true" signature="3592:3630" placeholder="SELECT * FRO... trip" />
-            <marker date="1465889094598" expanded="true" signature="3833:4045" placeholder="SELECT * FRO... trip" />
-            <marker date="1465889094598" expanded="true" signature="4257:4323" placeholder="SELECT * FRO... trip" />
-            <marker date="1465889094598" expanded="true" signature="6398:6449" placeholder="UPDATE trip " />
-          </folding>
         </state>
       </provider>
     </entry>

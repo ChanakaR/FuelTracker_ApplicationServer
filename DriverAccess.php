@@ -67,7 +67,24 @@ class DriverAccess implements Access
     }
 
     public function selectAvailableDrivers(){
-
+        if($this->connection != null){
+            $query = "select c.*,d.driver_id,d.driving_licence_no from member c inner join (select a.*,b.id as trip_id from driver a left outer join (select id,driver_id from trip where on_trip='ON') b on a.id = b.driver_id) d on d.id=c.id where d.trip_id is null";
+            $result = $this->connection->query($query);
+            $vehicle_array = array();
+            while($row =mysqli_fetch_assoc($result))
+            {
+                $vehicle_array[] = $row;
+            }
+            $json_data = json_encode($vehicle_array,true);
+            $response_json = '{
+                            "error_code" : "0",
+                            "message" : '.$json_data.'
+                          }';
+            $this->disconnect();
+            return $response_json;
+        }else{
+            return CONNECTION_ERROR;
+        }
     }
 
     public function updateRow($data_array)
@@ -79,7 +96,7 @@ class DriverAccess implements Access
         $address = $data_array["address"];
 
         $query_member = "UPDATE member SET nic = '$nic',contact_no = '$contact_no',address='$address' WHERE id='$id'";
-        $query_driver = "UPDATE driver SET driving_licence_no = '$licence_no' WHERE id='$id'";
+        $query_driver = "UPDATE driver SET driving_licence_no = '$licence_no',driver_id='$data_array[driver_id]' WHERE id='$id'";
 
         if($this->connection->query($query_member)){
             if($this->connection->query($query_driver)){
@@ -96,13 +113,39 @@ class DriverAccess implements Access
         }
     }
 
+    public function updateAllById($data_array){
+        if($this->connection != null){
+            try{
+                mysqli_query($this->connection,"START TRANSACTION;");
+                mysqli_query($this->connection,"UPDATE member SET f_name='$data_array[first_name]',l_name='$data_array[last_name]',address='$data_array[address]',contact_no='$data_array[contact_no]',gender='$data_array[gender]',nic='$data_array[nic]' WHERE id='$data_array[id]';");
+                mysqli_query($this->connection,"UPDATE driver SET driver_id='$data_array[driver_id]',driving_licence_no='$data_array[licence_no]', WHERE id='$data_array[id]';");
+                mysqli_query($this->connection,"COMMIT");
+                return OPERATION_SUCCESS;
+            }
+            catch(Exception $ex){
+                echo $ex->getMessage();
+                return OPERATION_UNSUCCESSFUL;
+            }
+        }else{
+            return CONNECTION_ERROR;
+        }
+    }
+
     public function deleteRow($data_array)
     {
-        // TODO: Implement deleteRow() method.
+        if($this->connection != null){
+            if(mysqli_query($this->connection,"DELETE FROM member WHERE id='$data_array[id]';")){
+                return OPERATION_SUCCESS;
+            }else{
+                return OPERATION_UNSUCCESSFUL;
+            }
+        }else{
+            return CONNECTION_ERROR;
+        }
     }
 
     public function select($data_array)
     {
-        // TODO: Implement select() method.
+
     }
 }
